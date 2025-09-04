@@ -1,0 +1,35 @@
+.hero {
+  height: 90vh;
+  background: url('hero.jpg') no-repeat center center/cover;
+  @include flex-center();
+  justify-content: flex-start;
+  padding-left: 5rem;
+  position: relative;
+  overflow: hidden;
+
+  &::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to right, rgba(14,14,16,0.8) 30%, transparent 100%);
+    z-index: 0;
+  }
+
+  .hero-content {
+    position: relative;
+    z-index: 1;
+    max-width: 600px;
+
+    h1 {
+      font-size: 3.5rem;
+      margin-bottom: 1rem;
+      line-height: 1.2;
+    }
+
+    p {
+      font-size: 1.2rem;
+      color: $text-light;
+      margin-bottom: 2rem;
+    }
+  }
+}

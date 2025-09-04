@@ -1,0 +1,40 @@
+.content-section {
+  background-color: $bg-dark;
+  padding: $section-padding;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+
+  .content-block {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+
+    &.reverse {
+      flex-direction: row-reverse;
+    }
+
+    .text {
+      flex: 1;
+      h2 {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+        color: $primary;
+      }
+      p {
+        font-size: 1.1rem;
+        color: $text-light;
+        line-height: 1.6;
+      }
+    }
+
+    .image {
+      flex: 1;
+      img {
+        width: 100%;
+        border-radius: $radius;
+        box-shadow: 0 0 20px rgba(0,0,0,0.4);
+      }
+    }
+  }
+}

@@ -1,0 +1,23 @@
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 2rem;
+  background: #fff;
+  border-radius: $border-radius;
+  overflow: hidden;
+
+  th, td {
+    padding: 1rem;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+
+  th {
+    background: $primary-color;
+    color: #fff;
+  }
+
+  tr:hover {
+    background: #f9f9f9;
+  }
+}

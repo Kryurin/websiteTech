@@ -1,0 +1,35 @@
+.info-cards {
+  @include flex-center(2rem);
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: $section-padding;
+  background-color: $bg-dark;
+}
+
+.card {
+  background-color: $bg-card;
+  border: 1px solid $border;
+  border-radius: $radius;
+  padding: 1.5rem;
+  width: 400px;
+  text-align: center;
+  box-shadow: 0 0 15px rgba(0,0,0,0.3);
+  @include card-hover;
+
+  img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+  }
+
+  h3 {
+    font-size: 1.4rem;
+    margin-bottom: 0.8rem;
+  }
+
+  p {
+    font-size: 1rem;
+    color: $text-light;
+    margin-bottom: 1.2rem;
+  }
+}

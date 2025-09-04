@@ -1,0 +1,48 @@
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1rem 1.5rem;
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 60px;
+    right: 0;
+    flex-direction: column;
+    background: $bg-card;
+    width: 200px;
+    padding: 1rem;
+    display: none;
+
+    &.active {
+      display: flex;
+    }
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .hero {
+    height: auto;
+    padding: 4rem 2rem;
+    justify-content: center;
+    text-align: center;
+
+    .hero-content {
+      max-width: 100%;
+      h1 { font-size: 2.2rem; }
+      p { font-size: 1rem; }
+    }
+  }
+
+  .content-block,
+  .content-block.reverse {
+    flex-direction: column;
+    text-align: center;
+    .image { order: -1; }
+  }
+
+  .content-section { padding: 2rem; }
+}
