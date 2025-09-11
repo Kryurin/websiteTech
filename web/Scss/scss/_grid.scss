@@ -13,8 +13,4 @@
   &.four-col {
     grid-template-columns: repeat(4, 1fr);
   }
-
-  &.center {
-    place-items: center;
-  }
 }

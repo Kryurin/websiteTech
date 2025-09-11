@@ -1,40 +1,37 @@
 .navbar {
-  @include flex-center(2rem);
-  justify-content: space-between;
-  background-color: transparent;
-  padding: 1rem 3rem;
-  border-bottom: 1px solid $border;
-  position: relative;
-  z-index: 1000;
-}
-
-.logo {
-  color: $text-white;
-  font-size: 1.6rem;
-  font-weight: bold;
-  letter-spacing: 1px;
-}
-
-.nav-links {
-  list-style: none;
+  width: 100%; // make sure it spans full width
   display: flex;
-  gap: 2rem;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem; // add left/right padding instead of container restriction
+  background: darken($primary-color, 5%);
 
-  a {
-    color: $text-light;
-    text-decoration: none;
-    font-size: 1rem;
-    transition: color 0.3s;
+  .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: $accent-color;
+  }
 
-    &:hover {
-      color: $text-white;
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+
+    li a {
+      font-size: 1rem;
+      transition: color 0.3s;
+
+      &:hover,
+      &.active {
+        color: $accent-color;
+      }
     }
   }
-}
 
-.hamburger {
-  display: none;
-  font-size: 2rem;
-  color: $text-white;
-  cursor: pointer;
+  .hamburger {
+    display: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: $text-color;
+  }
 }

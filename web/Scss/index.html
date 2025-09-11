@@ -3,18 +3,17 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>WuwaGuides</title>
-  <link rel="stylesheet" href="css/style.css"> <!-- compiled SCSS -->
+  <title>WuwaGuides - Characters</title>
+  <link rel="stylesheet" href="css\style.css">
   <link rel="icon" href="wuwa.jpg">
 </head>
 <body>
-
   <!-- Navbar -->
   <nav class="navbar">
     <div class="logo">WuwaGuides</div>
     <ul class="nav-links">
-      <li><a href="C:\Users\students\Desktop\web\Bootstrap\index.html">Home</a></li>
-      <li><a href="#">Characters</a></li>
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="characters.html" class="active">Characters</a></li>
       <li><a href="#">Guide</a></li>
       <li><a href="#">Build</a></li>
       <li><a href="#">Story</a></li>
@@ -22,107 +21,121 @@
     <div class="hamburger">&#9776;</div>
   </nav>
 
-  <!-- Hero Section -->
-  <section class="hero">
+  <section class="hero characters-hero">
     <div class="hero-content">
-      <h1>Awaken the Echoes</h1>
-      <p>Uncover a world rebuilt from silence. Your story begins where the old world ends.</p>
-      <a href="#" class="button">Start Journey</a>
+      <h1>Meet the Resonators</h1>
+      <p>Discover every playable character in Wuthering Waves, their skills, elements, and lore. 
+        Build your dream team and explore their unique stories.</p>
+      <a href="#characters-list" class="cta-button">View Characters</a>
     </div>
   </section>
 
-  <!-- Zigzag Content Sections -->
-    <section class="content-section">
-    <div class="grid two-col content-block">
-        <div class="text">
-        <h2>Know all the Tips</h2>
-        <p>Know everything there is about Wuthering Waves, Builds, Tips, and even the Characters. All this available on this website.
-            Know what to avoid and what Characters you should pull, create builds and even plan for future events.
-        </p>
-        </div>
-        <div class="image">
-        <img src="content1.avif" alt="New World">
-        </div>
-    </div>
+  <section class="characters">
+  <h2 class="section-title">Playable Resonators</h2>
 
-    <div class="grid two-col content-block reverse">
-        <div class="text">
-        <h2>Meet Your Resonators</h2>
-        <p>Each character has a unique story and skillset. Form the best team, know how they work with each other, the skills, elements
-            and what their kits do, also their lore, their stories and more.
-        </p>
-        </div>
-        <div class="image">
-        <img src="content2.jpg" alt="Resonators">
-        </div>
+  <!-- Spectro -->
+  <div class="element-group spectro">
+    <h3 class="element-title">Spectro</h3>
+    <div class="character-grid">
+      <div class="character-card"><img src="css/images/jinshi.jpg" alt="Jinhsi"><h3>Jinhsi</h3><p>5★ • Broadblade</p></div>
+      <div class="character-card"><img src="css/images/rover.jpeg" alt="Rover Spectro"><h3>Rover (Spectro)</h3><p>5★ • Sword</p></div>
+      <div class="character-card"><img src="css/images/zani.webp" alt="Zani"><h3>Zani</h3><p>5★ • Gauntlets</p></div>
+      <div class="character-card"><img src="css/images/shorekeeper.jpg" alt="Shorekeeper"><h3>Shorekeeper</h3><p>5★ • Rectifier</p></div>
+      <div class="character-card"><img src="css/images/phoebe.jpg" alt="Phoebe"><h3>Phoebe</h3><p>5★ • Rectifier</p></div>
     </div>
+  </div>
 
-    <div class="grid two-col content-block">
-        <div class="text">
-        <h2>Master the Echo System</h2>
-        <p>Create the perfect echo build for your characters, know where they spawn, and how to unlock certain echos. Know how they work
-            and how they impact, the skills they do and let's catch our favourite echo's</p>
-        </div>
-        <div class="image">
-        <img src="content3.avif" alt="Echo System">
-        </div>
+  <!-- Aero -->
+  <div class="element-group aero">
+    <h3 class="element-title">Aero</h3>
+    <div class="character-grid">
+      <div class="character-card"><img src="css/images/aalto.jpg" alt="Aalto"><h3>Aalto</h3><p>4★ • Pistols</p></div>
+      <div class="character-card"><img src="css/images/jiyan.jpg" alt="Jiyan"><h3>Jiyan</h3><p>5★ • Broadblade</p></div>
+      <div class="character-card"><img src="css/images/jianxin.jpg" alt="Jianxin"><h3>Jianxin</h3><p>5★ • Gauntlets</p></div>
+      <div class="character-card"><img src="css/images/cartethyia.jpg" alt="Cartethyia"><h3>Cartethyia</h3><p>5★ • Sword</p></div>
+      <div class="character-card"><img src="css/images/ciaccona.jpg" alt="Ciaccona"><h3>Ciaccona</h3><p>5★ • Pistols</p></div>
+      <div class="character-card"><img src="css/images/rover.jpeg" alt="Rover Aero"><h3>Rover (Aero)</h3><p>5★ • Sword</p></div>
     </div>
-    </section>
+  </div>
 
+  <!-- Glacio -->
+  <div class="element-group glacio">
+    <h3 class="element-title">Glacio</h3>
+    <div class="character-grid">
+      <div class="character-card"><img src="css/images/baizhi.jpg" alt="Baizhi"><h3>Baizhi</h3><p>4★ • Rectifier</p></div>
+      <div class="character-card"><img src="css/images/sanhua.jpg" alt="Sanhua"><h3>Sanhua</h3><p>4★ • Sword</p></div>
+      <div class="character-card"><img src="css/images/lingyang.jpg" alt="Lingyang"><h3>Lingyang</h3><p>5★ • Gauntlets</p></div>
+      <div class="character-card"><img src="css/images/carlotta.jpg" alt="Carlotta"><h3>Carlotta</h3><p>5★ • Pistols</p></div>
+      <div class="character-card"><img src="css/images/zhezhi.jpg" alt="Zhezhi"><h3>Zhezhi</h3><p>5★ • Rectifier</p></div>
+    </div>
+  </div>
 
-  <hr class="divider">
+  <!-- Fusion -->
+  <div class="element-group fusion">
+    <h3 class="element-title">Fusion</h3>
+    <div class="character-grid">
+      <div class="character-card"><img src="css/images/chixia.jpg" alt="Chixia"><h3>Chixia</h3><p>4★ • Pistols</p></div>
+      <div class="character-card"><img src="css/images/mortefi.jpg" alt="Mortefi"><h3>Mortefi</h3><p>4★ • Pistols</p></div>
+      <div class="character-card"><img src="css/images/changli.jpg" alt="Changli"><h3>Changli</h3><p>5★ • Sword</p></div>
+      <div class="character-card"><img src="css/images/encore.jpg" alt="Encore"><h3>Encore</h3><p>5★ • Rectifier</p></div>
+      <div class="character-card"><img src="css/images/brant.jpg" alt="Brant"><h3>Brant</h3><p>5★ • Sword</p></div>
+      <div class="character-card"><img src="css/images/lupa.jpg" alt="Lupa"><h3>Lupa</h3><p>5★ • Broadblade</p></div>
+    </div>
+  </div>
 
-  <!-- Info Cards Section -->
-  <section class="info-cards grid three-col">
-    <div class="card">
-      <img src="magic-book.png" alt="Guides">
-      <h3>Guides</h3>
-      <p>Get started with beginner tips, progression strategies, and exploration advice.</p>
-      <a href="#" class="button small">View Guides</a>
+  <!-- Havoc -->
+  <div class="element-group havoc">
+    <h3 class="element-title">Havoc</h3>
+    <div class="character-grid">
+      <div class="character-card"><img src="css/images/taoqi.jpg" alt="Taoqi"><h3>Taoqi</h3><p>4★ • Broadblade</p></div>
+      <div class="character-card"><img src="css/images/danjin.jpg" alt="Danjin"><h3>Danjin</h3><p>4★ • Sword</p></div>
+      <div class="character-card"><img src="css/images/rover.jpeg" alt="Rover Havoc"><h3>Rover (Havoc)</h3><p>5★ • Sword</p></div>
+      <div class="character-card"><img src="css/images/camellya.jpg" alt="Camellya"><h3>Camellya</h3><p>5★ • Sword</p></div>
+      <div class="character-card"><img src="css/images/cantarella.jpg" alt="Cantarella"><h3>Cantarella</h3><p>5★ • Rectifier</p></div>
+      <div class="character-card"><img src="css/images/phrolova.jpg" alt="Phrolova"><h3>Phrolova</h3><p>5★ • Rectifier</p></div>
     </div>
-    <div class="card">
-      <img src="character.png" alt="Characters">
-      <h3>Characters</h3>
-      <p>Discover powerful Resonators, their abilities, and backstories.</p>
-      <a href="#" class="button small">See Characters</a>
+  </div>
+
+  <!-- Electro -->
+  <div class="element-group electro">
+    <h3 class="element-title">Electro</h3>
+    <div class="character-grid">
+      <div class="character-card"><img src="css/images/yuanwu.jpg" alt="Yuanwu"><h3>Yuanwu</h3><p>4★ • Gauntlets</p></div>
+      <div class="character-card"><img src="css/images/lumi.jpg" alt="Lumi"><h3>Lumi</h3><p>4★ • Broadblade</p></div>
+      <div class="character-card"><img src="css/images/calcharo.jpg" alt="Calcharo"><h3>Calcharo</h3><p>5★ • Broadblade</p></div>
+      <div class="character-card"><img src="css/images/augusta.jpg" alt="Augusta"><h3>Augusta</h3><p>5★ • Broadblade</p></div>
+      <div class="character-card"><img src="css/images/yinlin.jpg" alt="Yinlin"><h3>Yinlin</h3><p>5★ • Rectifier</p></div>
+      <div class="character-card"><img src="css/images/xiangliyao.jpg" alt="Xiangli Yao"><h3>Xiangli Yao</h3><p>5★ • Gauntlets</p></div>
     </div>
-    <div class="card">
-      <img src="shield.png" alt="Builds">
-      <h3>Builds</h3>
-      <p>Optimize your team with recommended echo sets, weapons, and skill rotations.</p>
-      <a href="#" class="button small">Explore Builds</a>
-    </div>
-  </section>
+  </div>
+</section>
+
 
   <!-- Footer -->
   <footer class="site-footer">
     <div class="footer-container">
       <div class="footer-logo">WuwaGuides</div>
-
       <ul class="footer-nav">
         <li><a href="#">Home</a></li>
         <li><a href="#">Characters</a></li>
         <li><a href="#">Guides</a></li>
         <li><a href="#">Builds</a></li>
       </ul>
-
       <div class="footer-socials">
-        <a href="#" aria-label="Twitter"><img src="twitter.png" alt="Twitter"></a>
-        <a href="#" aria-label="YouTube"><img src="youtube.png" alt="YouTube"></a>
-        <a href="#" aria-label="WutheringWaves"><img src="wuwa.jpg" alt="Wuwa"></a>
+        <a href="#"><img src="C:\Users\Leds Feb 24 2016\Desktop\websiteTech\web\Scss\css\twitter.png" alt="Twitter"></a>
+        <a href="#"><img src="C:\Users\Leds Feb 24 2016\Desktop\websiteTech\web\Scss\css\youtube.png" alt="YouTube"></a>
+        <a href="#"><img src="C:\Users\Leds Feb 24 2016\Desktop\websiteTech\web\Scss\css\wuwa.jpg" alt="Wuwa"></a>
       </div>
     </div>
   </footer>
 
-  <!-- For Mobile NavBar Hamburger -->
+  <!-- Mobile Hamburger -->
   <script>
     const hamburger = document.querySelector('.hamburger');
     const navLinks = document.querySelector('.nav-links');
-
     hamburger.addEventListener('click', () => {
       navLinks.classList.toggle('active');
     });
   </script>
-
 </body>
 </html>

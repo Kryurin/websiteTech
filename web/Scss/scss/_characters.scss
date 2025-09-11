@@ -1,0 +1,89 @@
+.characters {
+  padding: 4rem 2rem;
+
+  .section-title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    color: $accent-color;
+  }
+
+  .element-group {
+    margin-bottom: 4rem;
+
+    .element-title {
+      text-align: center;
+      font-size: 1.8rem;
+      margin-bottom: 2rem;
+      font-weight: bold;
+    }
+
+    // Element-specific colors + glow
+    &.spectro {
+      .element-title { color: #e3ffb6; }
+      .character-card { box-shadow: 0 0 12px rgba(237, 245, 165, 0.4); }
+    }
+    &.aero {
+      .element-title { color: #88f09f; }
+      .character-card { box-shadow: 0 0 12px rgba(119, 219, 144, 0.4); }
+    }
+    &.glacio {
+      .element-title { color: #b3e5fc; }
+      .character-card { box-shadow: 0 0 12px rgba(179, 229, 252, 0.4); }
+    }
+    &.fusion {
+      .element-title { color: #ffab91; }
+      .character-card { box-shadow: 0 0 12px rgba(255, 171, 145, 0.4); }
+    }
+    &.havoc {
+      .element-title { color: #f48fb1; }
+      .character-card { box-shadow: 0 0 12px rgba(244, 143, 177, 0.4); }
+    }
+    &.electro {
+      .element-title { color: #ce93d8; }
+      .character-card { box-shadow: 0 0 12px rgba(206, 147, 216, 0.4); }
+    }
+
+    .character-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      justify-content: center;
+    }
+  }
+
+  .character-card {
+    flex: 0 0 220px;
+    max-width: 220px;
+    background: lighten($primary-color, 5%);
+    border-radius: 12px;
+    padding: 1rem;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+    img {
+      width: 100%;
+      height: 280px;          // fixed trading card height
+      object-fit: cover;      // fills card area, crops if needed
+      display: block;
+      margin: 0 auto 1rem;    // centers the image
+      border-radius: 8px;
+    }
+
+    h3 {
+      font-size: 1.2rem;
+      margin-bottom: 0.5rem;
+      color: $text-color;
+    }
+
+    p {
+      font-size: 0.9rem;
+      color: lighten($text-color, 20%);
+    }
+
+    &:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 0 16px rgba(0, 0, 0, 0.4);
+    }
+  }
+}

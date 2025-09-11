@@ -1,14 +1,13 @@
-@mixin flex-center($gap: 1rem) {
+// Flexbox center
+@mixin flex-center {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: $gap;
 }
 
-@mixin card-hover {
-  transition: transform 0.3s, box-shadow 0.3s;
-  &:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 0 25px rgba($primary, 0.3);
-  }
+// Responsive container
+@mixin container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
 }

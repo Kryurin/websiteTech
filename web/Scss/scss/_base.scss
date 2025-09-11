@@ -6,13 +6,19 @@
 
 body {
   font-family: $font-stack;
-  background-color: $bg-dark;
-  color: $text-white;
+  background: $primary-color;
+  color: $text-color;
+  line-height: 1.6;
+  width: 100%;
+  height: 100%;
 }
 
-.divider {
-  border: none;
-  height: 1px;
-  background-color: $border;
-  margin: 3rem 0;
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+  display: block;
 }
