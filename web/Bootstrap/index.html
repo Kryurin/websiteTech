@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>WuwaGuides - Builds</title>
+  <link rel="icon" href="../wuwa.jpg">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom Styles -->
+  <style>
+    body {
+      background-color: #0e0e10;
+      color: #ffffff;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    /* Navbar */
+    .navbar {
+      background-color: #121215;
+      border-bottom: 1px solid #2a2a2e;
+    }
+
+    .navbar-brand {
+      font-weight: bold;
+      color: #ffffff !important;
+    }
+
+    .nav-link {
+      color: #cccccc !important;
+      transition: color 0.3s;
+    }
+
+    .nav-link:hover {
+      color: #ffffff !important;
+    }
+
+    /* Hero Section */
+    .page-header {
+      position: relative;
+      height: 100vh;
+      background: url('../hero.jpg') no-repeat center center/cover;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      overflow: hidden;
+    }
+
+    .page-header::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to bottom, rgba(14,14,16,0.8) 20%, rgba(14,14,16,0.6) 60%, rgba(14,14,16,0.8) 100%);
+      z-index: 0;
+    }
+
+    .page-header h1,
+    .page-header p,
+    .page-header a {
+      position: relative;
+      z-index: 1;
+    }
+
+    .page-header h1 {
+      font-size: 3.5rem;
+      color: #ff4655;
+      margin-bottom: 1rem;
+    }
+
+    .page-header p {
+      font-size: 1.2rem;
+      color: #cccccc;
+      margin-bottom: 2rem;
+    }
+
+    .btn-wuwa {
+      background-color: #ff4655;
+      border: none;
+      color: #ffffff;
+      transition: background-color 0.3s;
+      padding: 0.8rem 2rem;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+
+    .btn-wuwa:hover {
+      background-color: #e23a4a;
+    }
+
+    /* Section Titles */
+    .section-title {
+      text-align: center;
+      color: #ff4655;
+      margin-bottom: 2rem;
+      font-size: 2rem;
+      font-weight: bold;
+    }
+
+    /* Cards */
+    .card {
+      background-color: #1a1a1d;
+      color: #ffffff;
+      border: 1px solid #2a2a2e;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.3);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 0 25px rgba(255, 70, 85, 0.3);
+    }
+
+    .card img {
+      border-radius: 10px 10px 0 0;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #121215;
+      border-top: 1px solid #2a2a2e;
+      padding: 2rem 0;
+      color: #cccccc;
+      text-align: center;
+    }
+
+    footer a {
+      color: #cccccc;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      color: #ffffff;
+    }
+
+    .footer-social img {
+      width: 24px;
+      height: 24px;
+      margin-right: 10px;
+      filter: brightness(0.8);
+      transition: transform 0.3s;
+    }
+
+    .footer-social img:hover {
+      transform: scale(1.1);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container">
+      <a class="navbar-brand" href="../index.html">WuwaGuides</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="../Scss/index.html">Characters</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Guide</a></li>
+          <li class="nav-item"><a class="nav-link active" href="#">Builds</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="page-header">
+    <h1>Wuthering Waves Builds</h1>
+    <p>Craft powerful loadouts with the best weapons and echo combinations.</p>
+    <a href="#weapons" class="btn btn-wuwa">View Builds</a>
+  </section>
+
+  <!-- Weapons Section -->
+  <section id="weapons" class="container py-5">
+    <h2 class="section-title">⚔️ Weapons</h2>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="card h-100">
+          <img src="../content1.avif" class="card-img-top" alt="Weapon 1">
+          <div class="card-body">
+            <h5 class="card-title">Lustrous Razor</h5>
+            <p class="card-text">Best suited for Rover (Havoc). Increases critical damage and skill burst potential.</p>
+            <a href="#" class="btn btn-wuwa">Learn More</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card h-100">
+          <img src="../content2.jpg" class="card-img-top" alt="Weapon 2">
+          <div class="card-body">
+            <h5 class="card-title">Emerald Shadow</h5>
+            <p class="card-text">Great for Jiyan — boosts attack and skill cooldown reduction for longer combos.</p>
+            <a href="#" class="btn btn-wuwa">Learn More</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card h-100">
+          <img src="../content3.avif" class="card-img-top" alt="Weapon 3">
+          <div class="card-body">
+            <h5 class="card-title">Autumntrace</h5>
+            <p class="card-text">Recommended for Lingyang — amplifies burst damage and echo resonance effects.</p>
+            <a href="#" class="btn btn-wuwa">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Echo Section -->
+  <section id="echos" class="container py-5">
+    <h2 class="section-title">🌀 Echo Builds</h2>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="card h-100">
+          <img src="../echo1.jpg" class="card-img-top" alt="Echo Set 1">
+          <div class="card-body">
+            <h5 class="card-title">Void Thunder</h5>
+            <p class="card-text">Ideal for Rover (Havoc). Enhances energy recovery and shock damage.</p>
+            <a href="#" class="btn btn-wuwa">View Echo Set</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card h-100">
+          <img src="../echo2.jpg" class="card-img-top" alt="Echo Set 2">
+          <div class="card-body">
+            <h5 class="card-title">Freezing Frost</h5>
+            <p class="card-text">A solid set for Jiyan. Boosts elemental damage and improves burst uptime.</p>
+            <a href="#" class="btn btn-wuwa">View Echo Set</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card h-100">
+          <img src="../echo3.jpg" class="card-img-top" alt="Echo Set 3">
+          <div class="card-body">
+            <h5 class="card-title">Molten Rift</h5>
+            <p class="card-text">Perfect for Lingyang. Provides massive fire burst bonuses and ultimate power.</p>
+            <a href="#" class="btn btn-wuwa">View Echo Set</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p><strong>WuwaGuides</strong> — Your guide to mastering Wuthering Waves.</p>
+      <div class="footer-social mb-2">
+        <a href="#"><img src="../twitter.png" alt="Twitter"></a>
+        <a href="#"><img src="../youtube.png" alt="YouTube"></a>
+        <a href="#"><img src="../wuwa.jpg" alt="Wuwa"></a>
+      </div>
+      <p>&copy; 2025 WuwaGuides. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
